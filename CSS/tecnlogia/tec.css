@@ -1,0 +1,114 @@
+.tecnologia-bg {
+  background-color: var(--cor-11);
+  color: white;
+  box-shadow: inset 0 60px white, inset 0 -60px white;
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.tecnologia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.tec-span {
+  display: block;
+  color: var(--cor-5);
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+
+.tecnologia-info h2 {
+  margin-bottom: 32px;
+}
+
+.tec-inf {
+  color: var(--cor-5);
+  margin-bottom: 20px;
+}
+
+.tecnologia-escolha {
+  display: inline-block;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.tec-wrap {
+  display: flex;
+  gap: 40px;
+}
+
+.motor,
+.rastreador {
+  display: block;
+  padding-bottom: 12px;
+}
+.tecnologia-modelo > span {
+  width: max-content;
+}
+
+.motor::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url("/img/icones/eletrica.svg");
+  background-repeat: no-repeat;
+}
+
+.rastreador::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url("/img/icones/rastreador.svg");
+  background-repeat: no-repeat;
+}
+.tecnologia-p {
+  font-weight: 400;
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #b2b2b2;
+}
+
+@media (max-width: 900px) {
+  .tec-span {
+    padding-top: 60px;
+  }
+  .tecnologia-bg {
+    box-shadow: none;
+  }
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+  .tec-span {
+    display: block;
+  }
+  .tecnologia-modelo {
+    margin-bottom: 40px;
+  }
+  .tecnologia img {
+    display: none;
+  }
+}
+@media (min-width: 900px) and (max-width: 1150px) {
+  .tec-span {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1150px) {
+  .tecnologia-bg {
+    box-shadow: none;
+  }
+}
+@media (max-width: 600px) {
+  .tec-wrap {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
