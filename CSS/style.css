@@ -6,3 +6,7 @@
 @import "./home/main.css";
 @import "./bicicletas/lista.css";
 @import "./tecnlogia/tec.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "./seguros/seguros.css";
+@import "./global/footer.css";

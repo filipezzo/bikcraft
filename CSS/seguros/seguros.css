@@ -1,0 +1,120 @@
+.seguros-bg {
+  background: var(--cor-11);
+  color: white;
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+.seguros-wrap {
+  display: flex;
+  gap: 40px;
+}
+.seguros-prata {
+  width: 560px;
+  height: 396px;
+  margin-top: 104px;
+  padding-left: 64px;
+}
+.seguros-prata h2,
+.seguros-ouro h2 {
+  padding-top: 32px;
+}
+
+.seguros-ouro {
+  width: 560px;
+  height: 484px;
+  margin-top: 60px;
+  padding-left: 64px;
+  margin-bottom: 60px;
+}
+
+.seguros-prata,
+.seguros-ouro {
+  background-color: var(--cor-12);
+}
+.seguros-prata li,
+.seguros-ouro li {
+  padding-bottom: 20px;
+}
+.prata {
+  color: #9c9c9c;
+}
+
+.ouro {
+  color: #ffbb00;
+}
+
+.prata,
+.ouro {
+  margin-bottom: 40px;
+}
+
+.seguros-inf {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.seguros-inf span {
+  margin-top: 62px;
+  padding-right: 32px;
+}
+
+.seguros-ouro span.font-1-xs,
+.seguros-prata span.font-1-xs {
+  color: #9c9c9c;
+}
+
+.botao1 {
+  color: white;
+  background: #2e2e2e;
+}
+
+.botao2:hover {
+  background: #2e2e2e;
+  color: #332200;
+}
+.font-1-xs {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+.font-1-xxl {
+  padding-top: 60px;
+}
+
+.seguros-prata li,
+.seguros-ouro li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.seguros-prata li::before,
+.seguros-ouro li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../img/icones/lista.svg");
+  left: -20px;
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  .seguros-wrap {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .seguros-prata,
+  .seguros-ouro {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+  }
+
+  .seguros-wrap {
+    gap: 20px;
+  }
+}
