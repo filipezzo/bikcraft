@@ -1,0 +1,51 @@
+.titulo > p {
+  color: var(--cor-5);
+  margin-bottom: 4px;
+}
+
+.titulo > h1 {
+  color: white;
+}
+
+.titulo-bg {
+  background-color: var(--cor-11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.termos {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.termos h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.termos p + h2 {
+  margin-top: 40px;
+}
+.termos p {
+  color: var(--cor-11);
+  margin-bottom: 24px;
+  max-width: 75ch;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+  .titulo > h1 {
+    padding-top: 0;
+  }
+  .termos {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
