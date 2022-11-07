@@ -1,0 +1,158 @@
+#nimbus {
+  color: white;
+  background-color: var(--cor-11);
+}
+
+.nimbus-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#nimbus.titulo p {
+  text-transform: uppercase;
+}
+.nimbus-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nimbus-img img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.nimbus-img img:first-child {
+  min-width: 100%;
+}
+
+.nimbus-txt > p {
+  margin-bottom: 32px;
+}
+
+.nimbus-compra {
+  display: grid;
+  grid-template-columns: max-content auto;
+  margin-bottom: 40px;
+}
+
+.nimbus-compra a {
+  grid-row: span 2;
+  align-items: center;
+  align-self: center;
+  justify-items: start;
+  gap: 8px 12px;
+  margin-right: 8px;
+}
+
+.nimbus-compra span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: max-content;
+  margin-bottom: 8px;
+  background-color: black;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.nimbus-info h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+.nimbus-info,
+.nimbus-tec {
+  background: black;
+  padding: 32px;
+  border-radius: 4px;
+}
+.nimbus-info {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.nimbus-txt h2 {
+  margin-bottom: 12px;
+}
+.nimbus-info img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+.nimbus-info h3 {
+  margin-bottom: 8px;
+}
+
+.nimbus-tec li {
+  padding: 4px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-11);
+}
+
+.nimbus-tec li:last-child {
+  border-bottom: none;
+}
+
+.lista-nimbus {
+  color: black;
+}
+
+.nimbus-seguro-bg {
+  background-color: #111;
+  color: white;
+  box-shadow: inset 0 120px white, inset 0 -120px black;
+}
+.nimbus-seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.nimbus-img-seguro img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.nimbus-seguro-conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.nimbus-seguro-conteudo h2 {
+  margin-bottom: 32px;
+}
+.nimbus-seguro-conteudo p {
+  margin-bottom: 20px;
+}
+
+.nimbus-seguro-conteudo a {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 800px) {
+  .nimbus-area {
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .nimbus-txt {
+    grid-row: 1;
+  }
+
+  .lista-h2 {
+    padding-top: 0;
+  }
+
+  .nimbus-seguro {
+    grid-template-columns: 1fr;
+  }
+
+  .nimbus-seguro-conteudo {
+    grid-row: 1;
+    padding-bottom: 0;
+  }
+}
