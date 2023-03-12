@@ -1,6 +1,6 @@
 # bikcraft :fire:
 
-a complex and complete bike shop website in portuguese for Origamid course 
+a complex and complete bike shop website PTBR for Origamid course using HTML 5 /CSS only
 
 some images from the website
 
